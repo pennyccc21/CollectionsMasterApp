@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace CollectionsMasterConsoleUI
 {
@@ -104,33 +105,67 @@ namespace CollectionsMasterConsoleUI
 
         private static void ThreeKiller(int[] numbers)
         {
-            
-        }
+            for (int i = 0; i < numbers.Length; i++) ;
+            {
+                if (numbers[i] % 3 == 0) ;
+                {
+                    numbers[i] = 0;
+                }
+            }
+        }   
 
         private static void OddKiller(List<int> numberList)
         {
-            
+            while(numbersList.Count < 51)
+            {
+                Random rng = new Random();
+                var number = rng.Next(0, 50);
+            }
         }
 
         private static void NumberChecker(List<int> numberList, int searchNumber)
         {
-            
+            if (numberList.Contains(seachNumbers))
+            {
+                Console.WriteLine($"Yes we have the number your looking for");
+            }
+            else
+            {
+                Console.WriteLine($"These are not the droids your looking for");
+                Console.WriteLine($"These are not the driods your looking for");
+            }
         }
 
         private static void Populater(List<int> numberList)
         {
-            Random rng = new Random();
+            for (int i = 0; i < numberList.Count; i++)
+
+                if (numberList[i] % 2 != 0)
+                {
+                    numberList.Remove(numberList[i]);
+                }
+
 
         }
 
         private static void Populater(int[] numbers)
         {
-            Random rng = new Random();
+            for (int i = 0; i < numbers.Length; i++)
+
+                if (numbers [i] % 3 == 0)
+                {
+                    numbers [i] = 0;
+                }
 
         }        
 
         private static void ReverseArray(int[] array)
         {
+            for (int i = numbersList.Count - 1; i < -1; i--)
+                if (numberList[i] % 2 != 0)
+                {
+                    numberList.RemoveAt(i);
+                }
             
         }
 
